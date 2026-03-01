@@ -133,8 +133,11 @@ grep -v "^#" Annotated_Variants.vcf | cut -f1-8
 Annotated results are saved to Annotated_Variants.vcf. All 6 variants returned CLNSIG=Pathogenic consistent with ClinVar expert panel review status.
 
 # References
+
 ACMG/AMP Guidelines: Richards S, et al. Genet Med. 2015;17(5):405–24. PMID: 25741868
+
 ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/
+
 OMIM: https://www.omim.org/
 UCSC Genome Browser: https://genome.ucsc.edu/
 
