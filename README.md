@@ -15,7 +15,7 @@ This repository documents a complete bioinformatics workflow for identifying, an
 # Selected Disorders & Variants
 
 | # Disease | Gene | Variant | ClinVar ID | ACMG Classification |
-|---|---------|------|---------|------------|---------------------|
+|------------|------|---------|------------|---------------------|
 |1 Cystic Fibrosis     |                CFTR|            c.1521_1523del (p.Phe508del) |      VCV000007105 |     Pathogenic|
 |2 Huntington's Disease|                HTT |            CAG repeat expansion ≥40     |     RCV000030659   |   Pathogenic|
 |3 Phenylketonuria(PKU)|                PAH  |           c.1222C>T (p.Arg408Trp)      |      VCV000000680   |   Pathogenic|
@@ -33,13 +33,14 @@ For each disorder, variants were selected using the following filters:
     • Clinical Significance: Pathogenic
     • Review Status: Expert panel or Practice guideline
 
-Direct                       ClinVar Links:
-DiseaseLinkCystic Fibrosis   https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/
-Huntington's Disease         https://www.ncbi.nlm.nih.gov/clinvar/RCV000030659/
-PKU                          https://www.ncbi.nlm.nih.gov/clinvar/variation/680/
-Marfan Syndrome              https://www.ncbi.nlm.nih.gov/clinvar/variation/13400/
-Sickle Cell Anemia           https://www.ncbi.nlm.nih.gov/clinvar/variation/15333/
-HBOC (BRCA1)                 https://www.ncbi.nlm.nih.gov/clinvar/variation/55411/
+|Direct                       |ClinVar Links|
+|----------|------------------|
+|DiseaseLinkCystic Fibrosis|   https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/|
+|Huntington's Disease       |  https://www.ncbi.nlm.nih.gov/clinvar/RCV000030659/|
+|PKU                         | https://www.ncbi.nlm.nih.gov/clinvar/variation/680/|
+|Marfan Syndrome            |  https://www.ncbi.nlm.nih.gov/clinvar/variation/13400/|
+|Sickle Cell Anemia          | https://www.ncbi.nlm.nih.gov/clinvar/variation/15333/|
+|HBOC (BRCA1)                 |https://www.ncbi.nlm.nih.gov/clinvar/variation/55411/|
 
 # Step-2: OMIM Phenotype Lookup
 
