@@ -15,13 +15,13 @@ This repository documents a complete bioinformatics workflow for identifying, an
 
 # Selected Disorders & Variants
 
-# Disease                             Gene            Variant                            ClinVar ID        ACMG
-1 Cystic Fibrosis                     CFTR            c.1521_1523del (p.Phe508del)       VCV000007105      Pathogenic
-2 Huntington's Disease                HTT             CAG repeat expansion ≥40           RCV000030659      Pathogenic
-3 Phenylketonuria(PKU)                PAH             c.1222C>T (p.Arg408Trp)            VCV000000680      Pathogenic
-4 Marfan Syndrome                     FBN1            c.5788G>A (p.Glu1930Lys)           VCV000013400      Pathogenic
-5 Sickle Cell Anemia                  HBB             c.20A>T (p.Glu7Val)                VCV000015333      Pathogenic
-6 Hereditary Breast & Ovarian Cancer  BRCA1           c.5266dupC (p.Gln1756ProfsTer74)   VCV000055411      Pathogenic
+|# Disease             |                Gene            Variant                            ClinVar ID        ACMG
+|1 Cystic Fibrosis     |                CFTR            c.1521_1523del (p.Phe508del)       VCV000007105      Pathogenic
+|2 Huntington's Disease|                HTT             CAG repeat expansion ≥40           RCV000030659      Pathogenic
+|3 Phenylketonuria(PKU)|                PAH             c.1222C>T (p.Arg408Trp)            VCV000000680      Pathogenic
+|4 Marfan Syndrome     |                FBN1            c.5788G>A (p.Glu1930Lys)           VCV000013400      Pathogenic
+|5 Sickle Cell Anemia  |                HBB             c.20A>T (p.Glu7Val)                VCV000015333      Pathogenic
+|6 Hereditary Breast & Ovarian Cancer|  BRCA1           c.5266dupC (p.Gln1756ProfsTer74)   VCV000055411      Pathogenic
 
 # Step-by-Step Workflow
 
