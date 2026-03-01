@@ -30,8 +30,8 @@ This repository documents a complete bioinformatics workflow for identifying, an
 URL: https://www.ncbi.nlm.nih.gov/clinvar/
 
 For each disorder, variants were selected using the following filters:
-    ** Clinical Significance:** Pathogenic
-    ** Review Status:** Expert panel or Practice guideline
+    - ** Clinical Significance:** Pathogenic
+    - ** Review Status:** Expert panel or Practice guideline
 
 |Direct                       |ClinVar Links|
 |----------|------------------|
