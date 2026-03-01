@@ -98,13 +98,13 @@ The patient_variants.vcf file (VCF v4.2) was constructed to simulate real patien
            Heterozygous autosomal dominant variants: (HTT, FBN1, BRCA1) 
 
 To validate on HPC:
-# Check file
+ Check file
 head -25 patient_variants.vcf
 
-# Count variants
+ Count variants
 grep -v "^#" patient_variants.vcf | wc -l
 
-# Validate with bcftools
+ Validate with bcftools
 module load bcftools
 bcftools stats patient_variants.vcf
 
