@@ -12,6 +12,9 @@ This repository documents a complete bioinformatics workflow for identifying, an
 4. Classified under ACMG/AMP (2015) variant interpretation guidelines
 5. Compiled into a standard VCF file (v4.2) simulating real patient WGS data
 
+| # | Disease | Gene | Variant | ClinVar ID | ACMG Classification |
+|---|---------|------|---------|------------|---------------------|
+
 
 # Selected Disorders & Variants
 
