@@ -85,7 +85,8 @@ Variants were classified following Richards et al. 2015 (PMID: 25741868).
 |FBN1 p.Glu1930Lys    |         PS3, PS4, PM1, PM2, PP3, PP5     |            Pathogenic|
 |HBB p.Glu7Val         |        PS3, PS4, PM1, PM5, PP3, PP5    |             Pathogenic|
 |BRCA1 c.5266dupC       |       PVS1, PS3, PS4, PM2, PP5       |              Pathogenic|
-# Reference: Richards et al. 2015, ACMG/AMP Guidelines (PMID: 25741868)
+
+Reference: Richards et al. 2015, ACMG/AMP Guidelines (PMID: 25741868)
 
 # Step-5: VCF File Creation
 The patient_variants.vcf file (VCF v4.2) was constructed to simulate real patient WGS output with the following specifications:
@@ -112,12 +113,12 @@ bcftools stats patient_variants.vcf
 
 # Annotate VCF using ClinVar database via bcftools
 The VCF was annotated against the ClinVar database on the HPC cluster using bcftools annotate:
-bash# Load required modules on HPC
+Load required modules on HPC
 module load bcftools
 module load htslib
 
-# ClinVar VCF (GRCh38) was pre-downloaded to the reference directory
-# Source: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
+ClinVar VCF (GRCh38) was pre-downloaded to the reference directory
+Source: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
 
 # Run annotation
 bcftools annotate \
