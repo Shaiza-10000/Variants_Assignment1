@@ -47,13 +47,14 @@ For each disorder, variants were selected using the following filters:
 URL: https://www.omim.org/
 Each gene was searched in OMIM to confirm disease association, inheritance mode, and phenotype entry.
 
-Disease                                Gene           OMIM
-Cystic Fibrosis                        CFTR           #219700
-Huntington's Disease                   HTT            #143100
-Phenylketonuria                        PAH            #261600
-Marfan Syndrome                        FBN1           #154700
-Sickle Cell Anemia                     HBB            #603903         
-Hereditary Breast & Ovarian Cancer     BRCA1          #604370
+|Disease                               | Gene|           OMIM|
+|------------------------------|-----------|---------|
+|Cystic Fibrosis                      |  CFTR |          #219700|
+|Huntington's Disease                 |  HTT   |         #143100|
+|Phenylketonuria                      ||  PAH  |          #261600|
+|Marfan Syndrome                     |   FBN1  |         #154700|
+|Sickle Cell Anemia                 |    HBB   |         #603903 |        
+|Hereditary Breast & Ovarian Cancer|     BRCA1 |         #604370|
 
 # Step-3: UCSC Genome Browser (AlphaMissense & CADD)
 
@@ -62,24 +63,25 @@ Assembly: Human GRCh38/hg38
 Tracks enabled: AlphaMissense and CADD 1.7
 Each locus was navigated to using the coordinates below. Screenshots are saved in ScreenShots/.
 
-Disease                  Coordinates(hg38)
-Cystic Fibrosis          chr7:117,559,500-117,559,650
-Huntington's Disease     chr4:3,074,800-3,076,800
-Phenylketonuria          chr12:102,836,900-102,837,100
-Marfan Syndrome          chr15:48,645,600-48,645,800
-Sickle Cell Anemia       chr11:5,226,900-5,227,100
-BRCA1 HBOC               chr17:43,071,000-43,071,200
+|Disease  |                Coordinates(hg38)|
+|---------|-------------|
+|Cystic Fibrosis      |    chr7:117,559,500-117,559,650|
+|Huntington's Disease|     chr4:3,074,800-3,076,800|
+|Phenylketonuria    |      chr12:102,836,900-102,837,100|
+|Marfan Syndrome|          chr15:48,645,600-48,645,800|
+|Sickle Cell Anemia|       chr11:5,226,900-5,227,100|
+|BRCA1 HBOC|               chr17:43,071,000-43,071,200|
 
 # Step-4: ACMG/AMP Classification
 Variants were classified following Richards et al. 2015 (PMID: 25741868).
 
-Variant                       Key ACMG Criteria                            Classification
-CFTR p.Phe508del              PVS1, PS3, PS4, PM4, PP5                     Pathogenic
-HTT CAG expansion             PVS1, PS4, PS3, PP4                          Pathogenic
-PAH p.Arg408Trp               PVS1, PS3, PS4, PM1, PM2, PP3, PP5           Pathogenic
-FBN1 p.Glu1930Lys             PS3, PS4, PM1, PM2, PP3, PP5                 Pathogenic
-HBB p.Glu7Val                 PS3, PS4, PM1, PM5, PP3, PP5                 Pathogenic
-BRCA1 c.5266dupC              PVS1, PS3, PS4, PM2, PP5                     Pathogenic
+|Variant|                       Key ACMG Criteria|                            Classification|
+|CFTR p.Phe508del  |            PVS1, PS3, PS4, PM4, PP5            |         Pathogenic|
+|HTT CAG expansion  |           PVS1, PS4, PS3, PP4                |          Pathogenic|
+|PAH p.Arg408Trp     |          PVS1, PS3, PS4, PM1, PM2, PP3, PP5|           Pathogenic|
+|FBN1 p.Glu1930Lys    |         PS3, PS4, PM1, PM2, PP3, PP5     |            Pathogenic|
+|HBB p.Glu7Val         |        PS3, PS4, PM1, PM5, PP3, PP5    |             Pathogenic|
+|BRCA1 c.5266dupC       |       PVS1, PS3, PS4, PM2, PP5       |              Pathogenic|
 # Reference: Richards et al. 2015, ACMG/AMP Guidelines (PMID: 25741868)
 
 # Step-5: VCF File Creation
