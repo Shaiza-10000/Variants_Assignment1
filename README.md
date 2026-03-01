@@ -51,7 +51,7 @@ Each gene was searched in OMIM to confirm disease association, inheritance mode,
 |------------------------------|-----------|---------|
 |Cystic Fibrosis                      |  CFTR |          #219700|
 |Huntington's Disease                 |  HTT   |         #143100|
-|Phenylketonuria                      ||  PAH  |          #261600|
+|Phenylketonuria                      | PAH  |          #261600|
 |Marfan Syndrome                     |   FBN1  |         #154700|
 |Sickle Cell Anemia                 |    HBB   |         #603903 |        
 |Hereditary Breast & Ovarian Cancer|     BRCA1 |         #604370|
@@ -76,6 +76,7 @@ Each locus was navigated to using the coordinates below. Screenshots are saved i
 Variants were classified following Richards et al. 2015 (PMID: 25741868).
 
 |Variant|                       Key ACMG Criteria|                            Classification|
+|---------------|--------|----------------|
 |CFTR p.Phe508del  |            PVS1, PS3, PS4, PM4, PP5            |         Pathogenic|
 |HTT CAG expansion  |           PVS1, PS4, PS3, PP4                |          Pathogenic|
 |PAH p.Arg408Trp     |          PVS1, PS3, PS4, PM1, PM2, PP3, PP5|           Pathogenic|
