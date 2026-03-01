@@ -1,0 +1,30 @@
+##fileformat=VCFv4.2
+##fileDate=20260301
+##source=PatientWGS_SimulatedData_Assignment1
+##reference=GRCh38/hg38
+##assembly=GRCh38
+##contig=<ID=4,length=190214555,assembly=GRCh38>
+##contig=<ID=7,length=159345973,assembly=GRCh38>
+##contig=<ID=11,length=135086622,assembly=GRCh38>
+##contig=<ID=12,length=133275309,assembly=GRCh38>
+##contig=<ID=15,length=101991189,assembly=GRCh38>
+##contig=<ID=17,length=83257441,assembly=GRCh38>
+##INFO=<ID=CLNSIG,Number=1,Type=String,Description="ClinVar clinical significance">
+##INFO=<ID=CLNID,Number=1,Type=String,Description="ClinVar Variation ID">
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=DISEASE,Number=1,Type=String,Description="Associated genetic disease">
+##INFO=<ID=OMIM,Number=1,Type=String,Description="OMIM disease accession">
+##INFO=<ID=HGVS,Number=1,Type=String,Description="HGVS notation">
+##INFO=<ID=INHERITANCE,Number=1,Type=String,Description="Inheritance pattern">
+##INFO=<ID=RS,Number=1,Type=String,Description="dbSNP rs identifier">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for REF and ALT alleles">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PATIENT_001
+7	117559592	.	ATCT	A	99	PASS	CLNSIG=Pathogenic;CLNID=7105;GENE=CFTR;DISEASE=Cystic_Fibrosis;OMIM=219700;HGVS=NM_000492.4(CFTR):c.1521_1523del(p.Phe508del);INHERITANCE=Autosomal_Recessive;RS=rs113993960	GT:AD:DP:GQ	1/1:0,45:45:99
+11	5227002	rs334	A	T	99	PASS	CLNSIG=Pathogenic;CLNID=15333;GENE=HBB;DISEASE=Sickle_Cell_Anemia;OMIM=603903;HGVS=NM_000518.5(HBB):c.20A>T(p.Glu7Val);INHERITANCE=Autosomal_Recessive;RS=rs334	GT:AD:DP:GQ	1/1:0,52:52:99
+4	3076606	.	G	GCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAG	99	PASS	CLNSIG=Pathogenic;CLNID=RCV000030659;GENE=HTT;DISEASE=Huntington_Disease;OMIM=143100;HGVS=NC_000004.11:g.3076606_GCA_repeat_expansion_40plus;INHERITANCE=Autosomal_Dominant	GT:AD:DP:GQ	0/1:28,30:58:95
+12	102836977	.	C	T	99	PASS	CLNSIG=Pathogenic;CLNID=680;GENE=PAH;DISEASE=Phenylketonuria;OMIM=261600;HGVS=NM_000277.3(PAH):c.1222C>T(p.Arg408Trp);INHERITANCE=Autosomal_Recessive;RS=rs5030858	GT:AD:DP:GQ	1/1:0,48:48:99
+15	48645707	.	G	A	99	PASS	CLNSIG=Pathogenic;CLNID=13400;GENE=FBN1;DISEASE=Marfan_Syndrome;OMIM=154700;HGVS=NM_000138.5(FBN1):c.5788G>A(p.Glu1930Lys);INHERITANCE=Autosomal_Dominant	GT:AD:DP:GQ	0/1:25,27:52:98
+17	43071077	.	C	CC	99	PASS	CLNSIG=Pathogenic;CLNID=55411;GENE=BRCA1;DISEASE=Hereditary_Breast_Ovarian_Cancer;OMIM=604370;HGVS=NM_007294.4(BRCA1):c.5266dupC(p.Gln1756ProfsTer74);INHERITANCE=Autosomal_Dominant	GT:AD:DP:GQ	0/1:30,33:63:99
