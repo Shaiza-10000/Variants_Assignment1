@@ -12,13 +12,10 @@ This repository documents a complete bioinformatics workflow for identifying, an
 4. Classified under ACMG/AMP (2015) variant interpretation guidelines
 5. Compiled into a standard VCF file (v4.2) simulating real patient WGS data
 
-| # | Disease | Gene | Variant | ClinVar ID | ACMG Classification |
-|---|---------|------|---------|------------|---------------------|
-
-
 # Selected Disorders & Variants
 
-|  Disease             |                Gene            Variant                            ClinVar ID        ACMG
+| # | Disease | Gene | Variant | ClinVar ID | ACMG Classification |
+|---|---------|------|---------|------------|---------------------|
 |1 Cystic Fibrosis     |                CFTR            c.1521_1523del (p.Phe508del)       VCV000007105      Pathogenic
 |2 Huntington's Disease|                HTT             CAG repeat expansion ≥40           RCV000030659      Pathogenic
 |3 Phenylketonuria(PKU)|                PAH             c.1222C>T (p.Arg408Trp)            VCV000000680      Pathogenic
