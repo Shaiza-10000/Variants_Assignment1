@@ -30,8 +30,8 @@ This repository documents a complete bioinformatics workflow for identifying, an
 URL: https://www.ncbi.nlm.nih.gov/clinvar/
 
 For each disorder, variants were selected using the following filters:
-    ** Clinical Significance: Pathogenic
-    ** Review Status: Expert panel or Practice guideline
+    ** Clinical Significance:** Pathogenic
+    ** Review Status:** Expert panel or Practice guideline
 
 |Direct                       |ClinVar Links|
 |----------|------------------|
@@ -88,12 +88,12 @@ Variants were classified following Richards et al. 2015 (PMID: 25741868).
 # Step-5: VCF File Creation
 The patient_variants.vcf file (VCF v4.2) was constructed to simulate real patient WGS output with the following specifications:
 
-** Complete ##fileformat, ##reference, ##contig, ##INFO, and ##FORMAT header lines
-** Standard column structure: #CHROM POS ID REF ALT QUAL FILTER INFO FORMAT SAMPLE
-** Realistic genotype fields: GT, AD, DP, GQ, PL
-** Zygosity reflects inheritance mode:
-          ** Homozygous — autosomal recessive variants (CFTR, PAH, HBB)
-          ** Heterozygous — autosomal dominant variants (HTT, FBN1, BRCA1)
+** Complete ##fileformat, ##reference, ##contig, ##INFO, and ##FORMAT header lines**
+** Standard column structure: #CHROM POS ID REF ALT QUAL FILTER INFO FORMAT SAMPLE**
+** Realistic genotype fields: GT, AD, DP, GQ, PL**
+** Zygosity reflects inheritance mode:**
+          ** Homozygous autosomal recessive variants: ** (CFTR, PAH, HBB)
+          ** Heterozygous autosomal dominant variants: ** (HTT, FBN1, BRCA1)
 
 To validate on HPC:
 # Check file
