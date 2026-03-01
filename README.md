@@ -1,50 +1,50 @@
-# Variants_Assignment1
-Pathogenic variant identification and annotation for 6 genetic/rare disorders | ClinVar • OMIM • UCSC • ACMG/AMP | GRCh38/hg38
+# Assignment 1: Pathogenic Variant Identification and Annotation
+Tools: ClinVar · OMIM · UCSC Genome Browser · ACMG/AMP Guidelines
+Reference Genome: GRCh38/hg38
+Variants Analyzed: 6 pathogenic variants across rare and common genetic disorders
 
 # Overview
-This repository contains a complete bioinformatics workflow for identifying, annotating, and analyzing pathogenic variants across 6 genetic and rare disorders. All variants were sourced from ClinVar, cross-referenced with OMIM, visualized in UCSC Genome Browser (AlphaMissense & CADD tracks), classified under ACMG/AMP guidelines, and compiled into a standard VCF file simulating real patient WGS data.
+This repository documents a complete bioinformatics workflow for identifying, annotating, and classifying pathogenic variants across 6 genetic disorders. Each variant was:
+
+1. Retrieved from ClinVar (expert panel / practice guideline reviewed)
+2. Cross-referenced with OMIM for phenotype and inheritance data
+3. Visualized in the UCSC Genome Browser using AlphaMissense and CADD 1.7 tracks
+4. Classified under ACMG/AMP (2015) variant interpretation guidelines
+5. Compiled into a standard VCF file (v4.2) simulating real patient WGS data
+
 
 # Selected Disorders & Variants
-➡️ Rare Genetic Disorders
-#DiseaseGeneVariantClinVar IDACMG1Cystic FibrosisCFTRc.1521_1523del (p.Phe508del)VCV000007105Pathogenic2Huntington's DiseaseHTTCAG repeat expansion ≥40RCV000030659Pathogenic3Phenylketonuria (PKU)PAHc.1222C>T (p.Arg408Trp)VCV000000680Pathogenic4Marfan SyndromeFBN1c.5788G>A (p.Glu1930Lys)VCV000013400Pathogenic
-➡️ Common Genetic Disorders
-#DiseaseGeneVariantClinVar IDACMG5Sickle Cell AnemiaHBBc.20A>T (p.Glu7Val)VCV000015333Pathogenic6Hereditary Breast & Ovarian CancerBRCA1c.5266dupC (p.Gln1756ProfsTer74)VCV000055411Pathogenic
 
-📂 Repository Structure
-.
-├── README.md                              # This file
-├── patient_variants.vcf                   # Simulated patient WGS VCF (6 variants, VCFv4.2)
-├── genetic_variants_assignment.xlsx       # Complete analysis spreadsheet
-├── clinvar_annotated_output.txt           # ClinVar annotation results
-└── screenshots/
-    ├── AlphaMissense_CADD_CFTR.png        # UCSC — CFTR locus
-    ├── AlphaMissense_CADD_HBB.png         # UCSC — HBB locus
-    ├── AlphaMissense_CADD_HTT.png         # UCSC — HTT locus
-    ├── AlphaMissense_CADD_PAH.png         # UCSC — PAH locus
-    ├── AlphaMissense_CADD_FBN1.png        # UCSC — FBN1 locus
-    └── AlphaMissense_CADD_BRCA1.png       # UCSC — BRCA1 locus
+# Disease                             Gene            Variant                            ClinVar ID        ACMG
+1 Cystic Fibrosis                     CFTR            c.1521_1523del (p.Phe508del)       VCV000007105      Pathogenic
+2 Huntington's Disease                HTT             CAG repeat expansion ≥40           RCV000030659      Pathogenic
+3 Phenylketonuria(PKU)                PAH             c.1222C>T (p.Arg408Trp)            VCV000000680      Pathogenic
+4 Marfan Syndrome                     FBN1            c.5788G>A (p.Glu1930Lys)           VCV000013400      Pathogenic
+5 Sickle Cell Anemia                  HBB             c.20A>T (p.Glu7Val)                VCV000015333      Pathogenic
+6 Hereditary Breast & Ovarian Cancer  BRCA1           c.5266dupC (p.Gln1756ProfsTer74)   VCV000055411      Pathogenic
 
 # Step-by-Step Workflow
 
-# Step 1 — ClinVar Variant Selection
+# Step-1: ClinVar Variant Selection
 
-1. Go to https://www.ncbi.nlm.nih.gov/clinvar/
-2. Search each disease name
-3. Filter: Clinical Significance = Pathogenic, Review Status = Expert panel / Practice guideline
-4. Select highest-reviewed, most clinically relevant variant
+URL: https://www.ncbi.nlm.nih.gov/clinvar/
 
-Direct ClinVar Links:
-DiseaseLinkCystic Fibrosishttps://www.ncbi.nlm.nih.gov/clinvar/variation/7105/
-Huntington's Diseasehttps://www.ncbi.nlm.nih.gov/clinvar/RCV000030659/
-PKUhttps://www.ncbi.nlm.nih.gov/clinvar/variation/680/
-Marfan Syndromehttps://www.ncbi.nlm.nih.gov/clinvar/variation/13400/
-Sickle Cell Anemiahttps://www.ncbi.nlm.nih.gov/clinvar/variation/15333/
-HBOC (BRCA1)https://www.ncbi.nlm.nih.gov/clinvar/variation/55411/
+For each disorder, variants were selected using the following filters:
+    • Clinical Significance: Pathogenic
+    • Review Status: Expert panel or Practice guideline
+
+Direct                       ClinVar Links:
+DiseaseLinkCystic Fibrosis   https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/
+Huntington's Disease         https://www.ncbi.nlm.nih.gov/clinvar/RCV000030659/
+PKU                          https://www.ncbi.nlm.nih.gov/clinvar/variation/680/
+Marfan Syndrome              https://www.ncbi.nlm.nih.gov/clinvar/variation/13400/
+Sickle Cell Anemia           https://www.ncbi.nlm.nih.gov/clinvar/variation/15333/
+HBOC (BRCA1)                 https://www.ncbi.nlm.nih.gov/clinvar/variation/55411/
 
 # Step-2: OMIM Phenotype Lookup
 
-1. Go to https://www.omim.org/
-2. Search each gene name
+URL: https://www.omim.org/
+Each gene was searched in OMIM to confirm disease association, inheritance mode, and phenotype entry.
 
 Disease                                Gene           OMIM
 Cystic Fibrosis                        CFTR           #219700
@@ -56,9 +56,10 @@ Hereditary Breast & Ovarian Cancer     BRCA1          #604370
 
 # Step-3: UCSC Genome Browser (AlphaMissense & CADD)
 
-1. Go to https://genome.ucsc.edu/
-2. Select Human GRCh38/hg38
-3. Enter genomic coordinates and enable AlphaMissense + CADD 1.7 tracks
+URL: https://genome.ucsc.edu/
+Assembly: Human GRCh38/hg38
+Tracks enabled: AlphaMissense and CADD 1.7
+Each locus was navigated to using the coordinates below. Screenshots are saved in ScreenShots/.
 
 Disease                  Coordinates(hg38)
 Cystic Fibrosis          chr7:117,559,500-117,559,650
@@ -69,6 +70,7 @@ Sickle Cell Anemia       chr11:5,226,900-5,227,100
 BRCA1 HBOC               chr17:43,071,000-43,071,200
 
 # Step-4: ACMG/AMP Classification
+Variants were classified following Richards et al. 2015 (PMID: 25741868).
 
 Variant                       Key ACMG Criteria                            Classification
 CFTR p.Phe508del              PVS1, PS3, PS4, PM4, PP5                     Pathogenic
@@ -80,13 +82,14 @@ BRCA1 c.5266dupC              PVS1, PS3, PS4, PM2, PP5                     Patho
 # Reference: Richards et al. 2015, ACMG/AMP Guidelines (PMID: 25741868)
 
 # Step-5: VCF File Creation
+The patient_variants.vcf file (VCF v4.2) was constructed to simulate real patient WGS output with the following specifications:
 
-The patient_variants.vcf follows:
-
-1. Full ##fileformat, ##reference, ##contig, ##INFO, ##FORMAT headers
-2. Proper column structure: #CHROM POS ID REF ALT QUAL FILTER INFO FORMAT SAMPLE
-3. Realistic genotype data (GT, AD, DP, GQ) simulating WGS output
-4. One entry per variant with appropriate zygosity (homozygous for recessive, heterozygous for dominant)
+• Complete ##fileformat, ##reference, ##contig, ##INFO, and ##FORMAT header lines
+• Standard column structure: #CHROM POS ID REF ALT QUAL FILTER INFO FORMAT SAMPLE
+• Realistic genotype fields: GT, AD, DP, GQ, PL
+• Zygosity reflects inheritance mode:
+          • Homozygous — autosomal recessive variants (CFTR, PAH, HBB)
+          • Heterozygous — autosomal dominant variants (HTT, FBN1, BRCA1)
 
 To validate on HPC:
 # Check file
@@ -102,14 +105,30 @@ bcftools stats patient_variants.vcf
 # Step=6: ClinVar Annotation
 
 # Annotate VCF using ClinVar database via bcftools
+The VCF was annotated against the ClinVar database on the HPC cluster using bcftools annotate:
+bash# Load required modules on HPC
 module load bcftools
+module load htslib
 
+# ClinVar VCF (GRCh38) was pre-downloaded to the reference directory
+# Source: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
+
+# Run annotation
 bcftools annotate \
-    -a clinvar.vcf.gz \
-    -c INFO \
-    patient_variants.vcf \
-    -o clinvar_annotated_output.vcf
+  -a /ref/clinvar/clinvar.vcf.gz \
+  -c ID,INFO/CLNSIG,INFO/CLNDN,INFO/CLNREVSTAT,INFO/CLNHGVS \
+  -h <(echo '##INFO=<ID=CLNSIG,Number=.,Type=String,Description="ClinVar clinical significance">') \
+  patient_variants.vcf \
+  -o Annotated_Variants.vcf
 
-# View results
-cat clinvar_annotated_output.vcf
+# Verify output
+bcftools stats Annotated_Variants.vcf | grep "^SN"
+grep -v "^#" Annotated_Variants.vcf | cut -f1-8
+Annotated results are saved to Annotated_Variants.vcf. All 6 variants returned CLNSIG=Pathogenic consistent with ClinVar expert panel review status.
+
+# References
+ACMG/AMP Guidelines: Richards S, et al. Genet Med. 2015;17(5):405–24. PMID: 25741868
+ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/
+OMIM: https://www.omim.org/
+UCSC Genome Browser: https://genome.ucsc.edu/
 
