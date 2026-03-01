@@ -121,15 +121,22 @@ module load htslib
 
 # Run annotation
 bcftools annotate \
+
   -a /ref/clinvar/clinvar.vcf.gz \
+  
   -c ID,INFO/CLNSIG,INFO/CLNDN,INFO/CLNREVSTAT,INFO/CLNHGVS \
+  
   -h <(echo '##INFO=<ID=CLNSIG,Number=.,Type=String,Description="ClinVar clinical significance">') \
+  
   patient_variants.vcf \
+  
   -o Annotated_Variants.vcf
 
 # Verify output
 bcftools stats Annotated_Variants.vcf | grep "^SN"
+
 grep -v "^#" Annotated_Variants.vcf | cut -f1-8
+
 Annotated results are saved to Annotated_Variants.vcf. All 6 variants returned CLNSIG=Pathogenic consistent with ClinVar expert panel review status.
 
 # References
